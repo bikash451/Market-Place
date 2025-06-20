@@ -1,0 +1,30 @@
+{
+  "name": "2nd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+     "start": "cross-env NODE_ENV=production node --experimental-specifier-resolution=node backend/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon --experimental-specifier-resolution=node backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@arcjet/node": "^1.0.0-beta.5",
+    "@neondatabase/serverless": "^1.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
